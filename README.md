@@ -5,7 +5,8 @@
 3. Settare un *IP statico* e cambiare *DNS*.
 
 * Clic destro sull'icona di rete/Modifica connessioni di rete/Selezioniamo l'interfaccia di rete e clic sull'icona ingranaggio delle impostazioni, nella sezione IPV4 impostiamo i valori di Getaway e Subnet mask.
-* Impostiamo il *DNS* del server con PiHole oppure usiamo i classici:  
+* Impostiamo il *DNS* del server con PiHole oppure usiamo i classici:
+ 
 | DNS | Primario | Secondario |
 |----|----|----|
 | Cloudflare | 1.1.1.1 | 1.0.0.1 |
