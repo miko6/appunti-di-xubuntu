@@ -1,4 +1,4 @@
-# My XUBUNTU minimal customization x Thinkpad T560 ![alt](https://github.com/miko6/appunti-di-xubuntu/blob/main/immagini/xubuntu.png?raw=true)  
+# My XUBUNTU minimal customization x Thinkpad T560 ![alt](https://github.com/miko6/appunti-di-xubuntu/blob/main/immagini/xubuntu.png)  
 
 1. Impostare la risoluzione a 1600x900 
 2. Installare [Floorp](https://ppa.floorp.app/)  
@@ -6,7 +6,6 @@
 
 * Clic destro sull'icona di rete/Modifica connessioni di rete/Selezioniamo l'interfaccia di rete e clic sull'icona ingranaggio delle impostazioni, nella sezione IPV4 impostiamo i valori di Getaway e Subnet mask.
 * Impostiamo il *DNS* del server con PiHole oppure usiamo i classici:  
-
 | DNS | Primario | Secondario |
 |----|----|----|
 | Cloudflare | 1.1.1.1 | 1.0.0.1 |
@@ -15,7 +14,6 @@
 4. In Impostazioni/Tastiera attivare il Block Maiusc all'avvio
 5. In Impostazioni/Schermo, tab Salvaschermo, disattivare il Salvaschermo  
 6. Fix tap del touchpad  
-
 - Creare il file */etc/X11/xorg.conf.d/40-libinput.conf* e incollare al suo interno le seguenti righe:
 ```
 Section "InputClass"
@@ -27,29 +25,30 @@ Section "InputClass"
   Option "TappingButtonMap" "lmr"
 EndSection
 ```
-- riavviare
+* riavviare  
 
-7. *Samba*
-
+7. *Data e ora* stile windows10.
+- Tasto destro sull'orologio, Configura, Utilizza un formato data personalizzato e scrivi nel campo Formato della data %R%n%x
+8. *Samba*
 * `sudo apt install samba` (se non installato)
 * Controllare che l'utente in Utenti e Gruppi sia inserito nel gruppo sambashare
 * `sudo smbpasswd -a nomeutente`
 * digitare prima la password amministratore e poi due volte la password per la condivisione
 * riavviare il server samba con `sudo service smbd restart` o riavviare il sistema  
 
-8. `sudo apt install unrar`
-9. `sudo apt install btop`
-10. `sudo apt install git`
-11. `sudo apt install mousepad`  
-12. `sudo apt install fastfetch`  
-13. `sudo apt install papirus-icon-theme`  
-14. `sudo apt install seahorse` (Portachiavi password con il quale settare una password vuota. Cliccare con il tasto destro su LOGIN, scegliere Cambia password, inserire la vecchia password, poi lasciare i due campi vuoti e dare due volte Continue)  
-15. `sudo add-apt-repository ppa:atareao/telegram`
+9. `sudo apt install unrar`
+10. `sudo apt install btop`
+11. `sudo apt install git`
+12. `sudo apt install mousepad`  
+13. `sudo apt install fastfetch`  
+14. `sudo apt install papirus-icon-theme`  
+15. `sudo apt install seahorse` (Portachiavi password con il quale settare una password vuota. Cliccare con il tasto destro su LOGIN, scegliere Cambia password, inserire la vecchia password, poi lasciare i due campi vuoti e dare due volte Continue)  
+16. `sudo add-apt-repository ppa:atareao/telegram`
 - `sudo apt install telegram`  
-16. *Ristretto* (visualizzatore immagini da synaptic)  
-17. *xfce4-goodies* (potenziamento di xfce)
-18. Se in Gestore File non è presente la sezione Network installare `sudo apt install gvfs-backends`  
-19. `sudo apt install mpv`
+17. *Ristretto* (visualizzatore immagini da synaptic)  
+18. *xfce4-goodies* (potenziamento di xfce)
+19. Se in Gestore File non è presente la sezione Network installare `sudo apt install gvfs-backends`  
+20. `sudo apt install mpv`
 
 > :memo: *script* da aggiungere nella cartella */home/.config/mpv/scripts*: **[autoload.lua](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autoload.lua)** - Per poter scorrere tra i file di una cartella con i tasti *PG ↑ & PG ↓* creare il file *input.conf* nella cartella */home/.config/mpv* con le seguenti righe:
 
@@ -58,7 +57,7 @@ PGUP playlist-prev ; show-text "${playlist-pos-1}/${playlist-count}"
 PGDWN playlist-next ; show-text "${playlist-pos-1}/${playlist-count}"
 ```
 
-20. Per evitare conflitti tra le *WebUi* dei servizi installati nel server andiamo a modificare il file `/etc/hosts` nel seguente modo: 
+21. Per evitare conflitti tra le *WebUi* dei servizi installati nel server andiamo a modificare il file `/etc/hosts` nel seguente modo: 
 
 `sudo nano /etc/hosts`  
 
@@ -69,7 +68,7 @@ aggiungiamo al file le seguenti linee
 192.168.1.xxx   webmin.local  
 192.168.1.xxx   portainer.local  
 ```  
-21. **Fish Shell**
+22. **Fish Shell**
 
 `echo 'deb http://download.opensuse.org/repositories/shells:/fish/Debian_13/ /' | sudo tee /etc/apt/sources.list.d/shells:fish.list`
 `curl -fsSL https://download.opensuse.org/repositories/shells:fish/Debian_13/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/shells_fish.gpg > /dev/null`
@@ -105,7 +104,7 @@ es. *alias clera clear*
 
 Riavviare  
 
-22. *Montare disco di rete all'avvio*  
+23. *Montare disco di rete all'avvio*  
 
 * Per verificare che l'utility sia installata lanciare un:  
 
