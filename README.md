@@ -1,4 +1,4 @@
-# My XUBUNTU minimal customization x Thinkpad T560 ![alt](-)  
+# My XUBUNTU minimal customization x Thinkpad T560 ![alt](https://github.com/miko6/appunti-di-xubuntu/blob/main/immagini/xubuntu.png?raw=true)  
 
 1. Impostare la risoluzione a 1600x900 
 2. Installare [Floorp](https://ppa.floorp.app/)  
