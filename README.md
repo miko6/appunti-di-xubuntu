@@ -78,8 +78,11 @@ aggiungiamo al file le seguenti linee
 21. **Fish Shell**
 
 `echo 'deb http://download.opensuse.org/repositories/shells:/fish/Debian_13/ /' | sudo tee /etc/apt/sources.list.d/shells:fish.list`  
+
 `curl -fsSL https://download.opensuse.org/repositories/shells:fish/Debian_13/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/shells_fish.gpg > /dev/null`  
+
 `sudo apt update`  
+
 `sudo apt install fish`  
 
 - A terminale aperto, cliccare con il tasto destro in un punto e cliccare su *Preferenze*. Andare nella sezione del profilo, tab *Comando*, spuntare l'opzione *Eseguire un comando personalizzato invece della shell* e nella sezione *Comando personalizzato* inserire */usr/bin/fish*  
