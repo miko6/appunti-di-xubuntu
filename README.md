@@ -87,18 +87,16 @@ aggiungiamo al file le seguenti linee
 - Per togliere le due righe del benvenuto del nuovo terminale lanciamo il seguente comando  
 `set -U fish_greeting ""`  
 
-- Installare uno dei *[Nerd Font](https://github.com/ryanoasis/nerd-fonts?tab=readme-ov-file)*  
-(scaricare uno dei font **[JetBrains](https://www.jetbrains.com/lp/mono/)**, estrarlo dal file archivio e copiarli nella cartella *~/.local/share/fonts*)   
-lanciare il comando `fc-cache -f -v` per aggiornare la cahe dei font  
-torniamo nelle Preferenze del terminale e nella sezione del profilo settiamo il nerd font installato come predefinito e *11* come dimensione  
-
-> :memo: Se ci sono problemi nella visualizzazione di alcuni font o icone lanciare i seguenti comandi:  
+- Installare uno dei *[Nerd Font](https://github.com/ryanoasis/nerd-fonts?tab=readme-ov-file)*  - 
+- Il mio preferito è *Meslo*:
 ```
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git  
 cd nerd-fonts  
 ./install.sh Meslo  
 ```
 `fc-cache -fv`  
+
+andiamo nelle Preferenze del terminale e nella sezione del profilo settiamo il nerd font installato come predefinito e *11* come dimensione  
 
 - Installare *[fisher](https://github.com/jorgebucaran/fisher)* + plugin *tide*  
 seguiamo i passaggi per configurarlo, le mie scelte:  
