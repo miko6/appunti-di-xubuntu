@@ -134,3 +134,4 @@ Riavviare
 > :memo: **Note:** se riceviamo un *permisison denied* relativo a *cifs* dobbiamo aggiungere l'utente *samba* con `sudo smbpasswd -a nomeutente`  
 
 23. Piazzare la miniatura della immagine profilo chiamata *.face* nella cartela */home*
+24. `sudo apt install cups system-config-printer` per installare la stampante  
