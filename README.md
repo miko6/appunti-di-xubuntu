@@ -30,7 +30,7 @@ EndSection
 * riavviare  
 
 7. *Data e ora* stile windows10.
-- Tasto destro sull'orologio, Configura, Utilizza un formato data personalizzato e scrivi nel campo Formato della data %R%n%x  
+- Tasto destro sull'orologio, Proprietà, nella sezione Opzioni dell'orologio --> campo Formato --> Formato personalizzato inserire questa stringa %R%n%x  
 
 8. *Samba*
 * `sudo apt install samba` (se non installato)
