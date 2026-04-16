@@ -136,3 +136,16 @@ Riavviare
 
 23. Piazzare la miniatura della immagine profilo chiamata *.face* nella cartela */home*
 24. `sudo apt install cups system-config-printer` per installare la stampante  
+25. Anteprime delle miniature dei video
+
+`sudo apt install ffmpegthumbnailer`    
+
+aggiorniamo la cache con `rm -rf ~/.cache/thumbnails/*`  
+
+26. Ottimizzazione della batteria con *tlp*
+
+`sudo apt install tlp tlp-rdw`
+
+`sudo tlp start` se non vogliamo attendere il riavvio del sistema  
+
+`sudo tlp-stat -s` per verificare lo stato del servizio
