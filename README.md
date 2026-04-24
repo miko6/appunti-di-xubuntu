@@ -44,18 +44,19 @@ EndSection
 11. `sudo apt install git`
 12. `sudo apt install mousepad`  
 13. `sudo apt install fastfetch`  
-14. `sudo apt install papirus-icon-theme`  
-15. `sudo apt install seahorse` (Portachiavi password con il quale settare una password vuota. Cliccare con il tasto destro su LOGIN, scegliere Cambia password, inserire la vecchia password, poi lasciare i due campi vuoti e dare due volte Continue)  
-16. `sudo add-apt-repository ppa:atareao/telegram`  
+14. `sudo apt install papirus-icon-theme`
+15. `sudo apt install simple-scan`  
+16. `sudo apt install seahorse` (Portachiavi password con il quale settare una password vuota. Cliccare con il tasto destro su LOGIN, scegliere Cambia password, inserire la vecchia password, poi lasciare i due campi vuoti e dare due volte Continue)  
+17. `sudo add-apt-repository ppa:atareao/telegram`  
 
 - `sudo apt install telegram`  
 
-17. Software da installare tramite Synaptic  
+18. Software da installare tramite Synaptic  
 - *Ristretto* (visualizzatore immagini da synaptic)  
 - *xfce4-goodies* (potenziamento di xfce)  
 - *Libreoffice* (Write, Calc e Draw)
-18. Se in Gestore File non è presente la sezione Network installare `sudo apt install gvfs-backends`  
-19. `sudo apt install mpv`
+19. Se in Gestore File non è presente la sezione Network installare `sudo apt install gvfs-backends`  
+20. `sudo apt install mpv`
 
 > :memo: *script* da aggiungere nella cartella */home/.config/mpv/scripts*: **[autoload.lua](https://github.com/mpv-player/mpv/blob/master/TOOLS/lua/autoload.lua)** - Per poter scorrere tra i file di una cartella con i tasti *PG ↑ & PG ↓* creare il file *input.conf* nella cartella */home/.config/mpv* con le seguenti righe:
 
@@ -64,7 +65,7 @@ PGUP playlist-prev ; show-text "${playlist-pos-1}/${playlist-count}"
 PGDWN playlist-next ; show-text "${playlist-pos-1}/${playlist-count}"
 ```
 
-20. Per evitare conflitti tra le *WebUi* dei servizi installati nel server andiamo a modificare il file `/etc/hosts` nel seguente modo: 
+21. Per evitare conflitti tra le *WebUi* dei servizi installati nel server andiamo a modificare il file `/etc/hosts` nel seguente modo: 
 
 `sudo nano /etc/hosts`  
 
@@ -75,7 +76,7 @@ aggiungiamo al file le seguenti linee
 192.168.1.xxx   webmin.local  
 192.168.1.xxx   portainer.local  
 ```  
-21. **Fish Shell**
+22. **Fish Shell**
 
 `echo 'deb http://download.opensuse.org/repositories/shells:/fish/Debian_13/ /' | sudo tee /etc/apt/sources.list.d/shells:fish.list`  
 
@@ -112,7 +113,7 @@ es. *alias clera clear*
 
 Riavviare  
 
-22. *Montare disco di rete all'avvio*  
+23. *Montare disco di rete all'avvio*  
 
 * Per verificare che l'utility sia installata lanciare un:  
 
@@ -134,15 +135,15 @@ Riavviare
 
 > :memo: **Note:** se riceviamo un *permisison denied* relativo a *cifs* dobbiamo aggiungere l'utente *samba* con `sudo smbpasswd -a nomeutente`  
 
-23. Piazzare la miniatura della immagine profilo chiamata *.face* nella cartela */home*
-24. `sudo apt install cups system-config-printer` per installare la stampante  
-25. Anteprime delle miniature dei video
+24. Piazzare la miniatura della immagine profilo chiamata *.face* nella cartela */home*
+25. `sudo apt install cups system-config-printer` per installare la stampante  
+26. Anteprime delle miniature dei video
 
 `sudo apt install ffmpegthumbnailer`    
 
 aggiorniamo la cache con `rm -rf ~/.cache/thumbnails/*`  
 
-26. Ottimizzazione della batteria con *tlp*
+27. Ottimizzazione della batteria con *tlp*
 
 `sudo apt install tlp tlp-rdw`
 
