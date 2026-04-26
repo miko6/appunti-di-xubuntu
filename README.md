@@ -151,4 +151,4 @@ aggiorniamo la cache con `rm -rf ~/.cache/thumbnails/*`
 
 `sudo tlp-stat -s` per verificare lo stato del servizio
 
-`sudo do-upgrade-release -d` per aggiornare la distribuzione  
+28. `sudo do-upgrade-release -d` per aggiornare la distribuzione  
