@@ -129,7 +129,9 @@ Riavviare
 
 * Aggiungi la seguente riga alla fine del file, sostituendo i valori segnaposto con i tuoi:  
 
-`//192.168.1.XXX/NASm2 /media/NASm2 cifs username=username,password=password,rw,uid=1000,gid=1000 0 0
+```
+//192.168.1.XXX/NASm2 /media/NASm2 cifs username=username,password=password,rw,uid=1000,gid=1000 0 0
+```
 
 * Riavvia  
 
